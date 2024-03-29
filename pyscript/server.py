@@ -6,7 +6,7 @@ from search_bad import is_in_fraud_urls
 import random
 
 app = Flask(__name__)
-CORS(app)  # This will enable CORS for all routes
+CORS(app)
 
 @app.route('/check_url', methods=['POST'])
 def check_url():
